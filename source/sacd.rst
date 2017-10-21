@@ -1,5 +1,5 @@
-Getting started with SACD
-=========================
+Getting started with SACD ISOs
+==============================
 
 SACDs are a bit boring to use with mobile devices and media servers. So, it's
 interesting to convert them into a modern space saving format without losing
@@ -15,7 +15,7 @@ I found the tool ``sacd_extract`` for macOS. It's easy to run::
 
     sacd_extract -i <inputfile.iso> -m -s
 
-It will extract all tracks in individual files. Unfortunately, it does not
+It will extract all tracks into individual files. Unfortunately, it does not
 support input from <stdin>.
 
 For SACDs it might be important, to use the ``-m`` to extract multi-channel

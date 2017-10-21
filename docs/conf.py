@@ -100,7 +100,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'mydocsdoc'
+htmlhelp_basename = 'mydocs'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -152,6 +152,3 @@ texinfo_documents = [
      author, 'mydocs', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-

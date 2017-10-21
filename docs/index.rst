@@ -22,6 +22,6 @@ Everything around video processing
 .. toctree::
    :maxdepth: 3
 
-   sacd
-   timelapse
-   optimizing_video
+   source/sacd
+   source/timelapse
+   source/optimizing_video

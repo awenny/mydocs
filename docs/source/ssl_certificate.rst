@@ -22,8 +22,8 @@ certificates. But there are two important things to know:
 Certbot
 =======
 
-Is a tool, you can obtain SSL certificates from different authorities with.
-You can find it `here`_ or via your Linux package manager.
+Is a tool, you can obtain SSL certificates from *Let's Encrypt* with.
+You can find it `here`_ or possibly via your Linux package manager.
 
 It will ask you some questions, and very easily directly install and configure
 your preferred web server software. I've used it very easily with ``nginx``.

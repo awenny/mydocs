@@ -33,4 +33,4 @@ Graphical User Interface
 
 The --- basically very powerful --- GUI tool ``XLD`` can be used to do the
 same. But I've experienced issues transcoding the ISOs. What renders this tool
-useless.
+useless to me.

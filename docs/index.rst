@@ -1,11 +1,12 @@
-############################
-Welcome to my documentation!
-############################
+************************************
+Welcome to my documentation library!
+************************************
 
 I've collected these information and it is my personal experience. I know,
 there are alternate ways to do it, but this is how I chose to document it ---
 or because it was the only way how it worked for me at that time.
-The more I grow older, the more I need to document mainly for myself. :)
+And, the more I grow older, the more I need to document **why** I did it how
+I did it. The **how** is usually documented anyway. :)
 
 .. important:: This documentation is not specific to one version of one
                application --- as it is usually the case. So it will be more a
@@ -13,12 +14,8 @@ The more I grow older, the more I need to document mainly for myself. :)
                proper state, versions will be of interest, to keep track of the
                changes.
 
-##################################
-Some things about video processing
-##################################
-
 .. toctree::
-   :maxdepth: 3
+   :caption: About video processing
 
    source/sacd
    source/timelapse

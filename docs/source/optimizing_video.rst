@@ -4,15 +4,16 @@ Optimizing videos in codec and quality
 
 These days, you often download videos from the internet to keep in your library
 for later watching --- or archiving. But many videos are encoded with poor
-video settings and/or not good video codec.
+video settings and/or no good video codec.
 
-I keep lots of documentations, I download from public video libraries.
+I keep lots of documentation videos, I download from various public video
+sources.
 
-Experience proofs, you can optimize file size by the half or even less than
-50 %, if using a codec like `HEVC`_ (x265). *I've even seen shrinking the file
-size with no noticeable degrading in quality to 10 % sometimes.* And current
-hardware usually supports this "new" codec, what requires slightly more
-processing powers than eg. x264 --- what is also a very good coded BTW.
+Experience proofs, you can improve file size to the half or even less, if
+using a codec like `HEVC`_ (h265). *I've even seen shrinking the file
+size with no noticeable degrade in quality to 10 % sometimes.* And current
+hardware usually supports this "new" codec, requiring slightly more
+processing power than eg. h264 --- what is also a very good codec, BTW.
 
 The idea behind it
 ==================
@@ -35,6 +36,19 @@ So, I've created a python program using SQLite to store the metadata. And with
 crontab to execute it on a regular basis to identify new incomings and process
 them.
 
+Features
+========
+
+This is a short list of noticeable features. For full details, consult the
+main `GitHub`_ repository documentation and script itself.
+
+* Keep track of processed video files with metadata before/after
+* Configurable encoding parameters per watch folder
+* Specified watch folder can have multi level subfolders
+* No audio re-encoding (by default), but could be set with parameters
+* All configuration is done on the command line or with the SQLite data file
+* SQLite data file will be created first time if it doesn't exist
+* If you understand SQL, you can change the metadata directly
 
 .. _HEVC: https://de.wikipedia.org/wiki/High_Efficiency_Video_Coding
 .. _GitHub: https://github.com/awenny/optimizevideo

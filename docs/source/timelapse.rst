@@ -1,5 +1,6 @@
+****************
 Timelapse videos
-================
+****************
 
 Just recently, I needed to create timelapse videos out of a list of short
 video snippets (roughly 2 minutes each).
@@ -7,7 +8,7 @@ video snippets (roughly 2 minutes each).
 The source code can be found on `GitHub`_.
 
 Basics
-------
+======
 
 What I found on several locations on the internet helped me creating this
 shell script.
@@ -23,7 +24,7 @@ It also helps, if you have more than one input video to process into one
 timelapse video.
 
 Details
--------
+=======
 
 The script expects one or more folders in the current folder. One folder will
 be combined into one timelapse video. Every folder must contain at least one
@@ -36,14 +37,14 @@ the final video.
 If the final timelapse video exists, this input folder will be skipped.
 
 Commands
---------
+========
 
 If the script is not needed, but my investigation might be of help, here are
 the commands explained, and what they do. For details on the arguments, look
 at the `ffmpeg documentation`_.
 
 Generate stills
-^^^^^^^^^^^^^^^
+---------------
 
 With the following command, one input video will be used to generate images on
 an regular basis::
@@ -60,7 +61,7 @@ showing the actual timestamp when this scene in the video actually happened
 [#f2]_.
 
 Generate final video
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 As you might already foresee is the final framerate you're using will determine
 the speed of you timelapse video::

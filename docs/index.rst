@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+############################
 Welcome to my documentation!
-============================
+############################
 
 I've collected these information and it is my personal experience. I know,
 there are alternate ways to do it, but this is how I chose to document it --
@@ -16,8 +17,9 @@ of one application -- as it is usually the case. So it will be more a rolling
 update. At least in the beginning. Once I've created a proper state, versions
 will be of interest, to keep track of the changes.
 
-Everything around video processing
-==================================
+##################################
+Some things about video processing
+##################################
 
 .. toctree::
    :maxdepth: 3

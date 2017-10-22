@@ -1,5 +1,6 @@
+******************************
 Getting started with SACD ISOs
-==============================
+******************************
 
 SACDs are a bit boring to use with mobile devices and media servers. So, it's
 interesting to convert them into a modern space saving format without losing
@@ -9,7 +10,7 @@ This guide will show, how to split an SACD ISO into separate tracks in FLAC
 format.
 
 Command line processing
------------------------
+=======================
 
 I found the tool ``sacd_extract`` for macOS. It's easy to run::
 
@@ -28,7 +29,7 @@ Then a::
 will convert the DSF file into FLAC format.
 
 Graphical User Interface
-------------------------
+========================
 
 The - basically very powerful - GUI tool ``XLD`` can be used to do the same.
 But I've experienced issues transcoding the ISOs. What renders this tool

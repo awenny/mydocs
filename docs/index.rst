@@ -20,3 +20,8 @@ I did it. The **how** is usually documented anyway. :)
    source/sacd
    source/timelapse
    source/optimizing_video
+
+.. toctree::
+   :caption: Internet
+
+   source/ssl_certificate

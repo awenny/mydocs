@@ -1,14 +1,14 @@
-****************
-Timelapse videos
-****************
+*****************
+Time lapse videos
+*****************
 
-Just recently, I needed to create timelapse videos out of a list of short
+Just recently, I needed to create time lapse videos out of a list of short
 video snippets (roughly 2 minutes each).
 
 The result can be found on `GitHub`_.
 
 It does only process video. Audio is --- of course --- omitted. Also, it does
-not mux audio tracks automatically into the final timelapse video. If you want
+not mux audio tracks automatically into the final time lapse video. If you want
 your music, then you need to post process it with your tool of choice.
 
 Basics
@@ -18,27 +18,27 @@ What I found on several locations on the internet helped me creating this
 shell script.
 
 What needs to be done in two steps. Apparently, ``ffmpeg`` cannot process the
-timelapse video directly from normal speed videos. That's why you need to steps
+time lapse video directly from normal speed videos. That's why you need to steps
 until final result:
 
 #. Create stills (as images) on a regular basis
-#. Combine these stills as one timelapse video file
+#. Combine these stills as one time lapse video file
 
 It also helps, if you have more than one input video to process into one
-timelapse video (aka concatenate them into one).
+time lapse video (aka concatenate them into one).
 
 Details
 =======
 
 The script expects one or more folders in the current folder. One folder will
-be combined into one timelapse video. Every folder must contain at least one
+be combined into one time lapse video. Every folder must contain at least one
 video file. Multiple levels of folders are not supported.
 
 For every folder, a temporary folder will be created to receive all the images.
 If the temporary folder already exists, it will take it and directly generate
-the final timelapse video.
+the final time lapse video.
 
-If the final timelapse video exists, this input folder will be skipped.
+If the final time lapse video exists, this input folder will be skipped.
 
 Commands
 ========
@@ -64,17 +64,17 @@ showing the actual timestamp when this scene in the video actually happened
 .. note:: Look at the ``%05d``. It will be replaced by a running number with
           leading zeros [#f2]_. You can also prefix it with the input video
           file name, it will mitigate the issue, if you have **more than one**
-          input video file for one final timelapse video.
+          input video file for one final time lapse video.
 
-Generate final timelapse video
-------------------------------
+Generate final time lapse video
+-------------------------------
 
-As you might already foresee is, the final framerate you're using will determine
-the speed of your timelapse video::
+As you might already foresee is, the final frame rate you're using will
+determine the speed of your time lapse video::
 
     ffmpeg -pattern_type glob -i 'tmpdir/*.png' -c:v libx264 OUTPUT_VIDEO.Extension
 
-If you don't give an argument for targeted framerate, ``ffmpeg`` will use 25
+If you don't give an argument for targeted frame rate, ``ffmpeg`` will use 25
 fps [#f3]_.
 
 .. hint:: If you have ``ffmpeg`` compiled with HEVC support, you might want to

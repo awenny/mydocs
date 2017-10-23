@@ -17,7 +17,7 @@ certificates. But there are two important things to know:
 #. With the tool ``certbot`` you should obtain certificates from your command
    line
 #. The URL(s) you're registering must be available from the internet, as Let's
-   Encrypt tries to connect to it.
+   Encrypt wants to verify them.
 
 Certbot
 =======
@@ -27,5 +27,7 @@ You can find it `here`_ or possibly via your Linux package manager.
 
 It will ask you some questions, and very easily directly install and configure
 your preferred web server software. I've used it very easily with ``nginx``.
+
+It's very quick and easy to obtain certificates for multiple URLs with one run.
 
 .. _here: https://certbot.eff.org

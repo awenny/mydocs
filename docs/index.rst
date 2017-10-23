@@ -18,10 +18,15 @@ I did it. The **how** is usually documented anyway. :)
    :caption: About video processing
 
    source/sacd
-   source/timelapse
+   source/time_lapse
    source/optimizing_video
 
 .. toctree::
    :caption: Internet
 
    source/ssl_certificate
+
+.. toctree::
+   :caption: Security
+
+   source/vulnerability_test

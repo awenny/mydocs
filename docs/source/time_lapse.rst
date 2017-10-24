@@ -18,8 +18,8 @@ What I found on several locations on the internet helped me creating this
 shell script.
 
 What needs to be done in two steps. Apparently, ``ffmpeg`` cannot process the
-time lapse video directly from normal speed videos. That's why you need to steps
-until final result:
+time lapse video directly from normal speed videos. That's why you need two
+steps until final result:
 
 #. Create stills (as images) on a regular basis
 #. Combine these stills as one time lapse video file

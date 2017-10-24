@@ -72,16 +72,10 @@ Generate final time lapse video
 As you might already foresee is, the final frame rate you're using will
 determine the speed of your time lapse video::
 
-    ffmpeg -pattern_type glob -i 'tmpdir/*.png' -c:v libx264 OUTPUT_VIDEO.Extension
+    ffmpeg -pattern_type glob -i 'tmpdir/*.png' -c:v libx265 -crf 26 -pix_fmt yuv420p OUTPUT_VIDEO.Extension
 
 If you don't give an argument for targeted frame rate, ``ffmpeg`` will use 25
 fps [#f3]_.
-
-.. hint:: If you have ``ffmpeg`` compiled with HEVC support, you might want to
-          try it first with a smaller input set of videos, if the quality is
-          ok. In my case, the colors were not correct by using the ``ffmpeg``
-          standards. I've just replaced the ``libx264`` with ``libx265`` for a
-          different encoder [#f4]_.
 
 .. rubric:: Footnotes
 

@@ -30,3 +30,8 @@ I did it. The **how** is usually documented anyway. :)
    :caption: Security
 
    source/vulnerability_test
+
+.. toctree::
+   :caption: Linux
+
+   source/bash_tips

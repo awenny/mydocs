@@ -69,3 +69,44 @@ https://github.com/alebcay/awesome-shell
 
 https://github.com/herrbischoff/awesome-command-line-apps
 
+Command line options for shell scripts (getopts)
+================================================
+
+I always need a template for ``getopts`` if I need to implement command line
+options to shell scripts. So this is a short example::
+
+    #!/bin/bash
+
+    usage() { echo "Usage: $0 [-s <45|90>] [-p <string>] [-a]" 1>&2; exit 1; }
+
+    flag_a=false
+
+    while getopts ":s:p:a" o; do
+        case "${o}" in
+            s)
+                s=${OPTARG}
+                ((s == 45 || s == 90)) || usage
+                ;;
+            p)
+                p=${OPTARG}
+                ;;
+            a)
+                flag_a=true
+                ;;
+            *)
+                usage
+                ;;
+        esac
+    done
+
+    shift $((OPTIND-1))
+
+    if ${flag_a}
+    then
+        echo "Do something"
+    fi
+
+The colon (:) after each option specifies an option value. The colon at the
+beginning turns it into silent error reporting useful for productive scripts.
+
+And a documentation here: http://wiki.bash-hackers.org/howto/getopts_tutorial

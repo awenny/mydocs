@@ -36,19 +36,19 @@ If you have the files:
 * 8.m4v
 * 9.m4v
 
-it will result in::
+it will be translated into::
 
     for FILE in 2.mp4 8.m4v 9.m4v 1.mkv
     do
         echo "${FILE}"
     done
 
-ending in this sort order:
+ending up in this sort order:
 
-* 2.mp4
-* 8.m4v
-* 9.m4v
-* 1.mkv
+#. 2.mp4
+#. 8.m4v
+#. 9.m4v
+#. 1.mkv
 
 But the question is, if this is what you want?
 

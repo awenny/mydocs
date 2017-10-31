@@ -59,3 +59,13 @@ extension::
     do
         echo "${FILE}"
     done
+
+Enhance the experience on the command line
+==========================================
+
+This is a collection of tools enhancing your (mostly) interactive command line.
+
+https://github.com/alebcay/awesome-shell
+
+https://github.com/herrbischoff/awesome-command-line-apps
+

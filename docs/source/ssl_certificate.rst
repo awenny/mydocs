@@ -11,13 +11,15 @@ Although, they must be renewed every 3 months.
 Let's Encrypt
 =============
 
-This nice services (https://letsencrypt.org) provides you with free
-certificates. But there are two important things to know:
+This nice service (https://letsencrypt.org) provides you with free
+certificates. But there are three important things to know:
 
 #. With the tool ``certbot`` you should obtain certificates from your command
-   line
-#. The URL(s) you're registering must be available from the internet, as Let's
-   Encrypt wants to verify them.
+   line. It makes things easier.
+#. The URL(s) you're registering must be reachable from the internet, as Let's
+   Encrypt wants to verify them (tries to connect to).
+#. They must be renewed every three months. But you will get a reminder in
+   advance.
 
 Certbot
 =======

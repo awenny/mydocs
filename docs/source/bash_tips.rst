@@ -241,14 +241,17 @@ and over again, even if nothing changed (at least in my own view).
 Meaning: running the sync script. After it finished running it again. I'd
 expect nothing to be transferred the second time. But apparently, it did.
 
+It will also speed up the process, as with your music files, there should be
+no change to the file what doesn't change the size as well.
+
 So, do yourself something good, and use this option :)
 
-Blanks in folder names
+Spaces in folder names
 ~~~~~~~~~~~~~~~~~~~~~~
 
 I've seen issues with the folder names I had to specify in my shell script
-above. And I didn't manage to mask the blanks properly, so I've decided to go
-without blanks in those folder names.
+above. And I didn't manage to mask the spaces properly, so I've decided to go
+without them in those folder names.
 
 The folder and file names, ``rsync`` is transferring in the end are working
 fine, just only the base folders I've specified on the command line making

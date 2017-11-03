@@ -197,7 +197,7 @@ And this small script will sync everything via SSH directly to the SD card::
         # If this device is not mounted, than silently skip
         [ -d "${TargetBaseDir}/${DIR}" ] || continue
 
-        rsync --progress -rtvhe ssh --size-only --iconv=utf-8-mac,utf-8 --delete-before --force-delete ${SSHSyncBaseDir}/${DIR} "${TargetBaseDir}"
+        rsync --progress -rtvhe ssh --size-only --iconv=utf-8-mac,utf-8 --delete-before --force-delete ${SSHSyncBaseDir}/${DIR}/ "${TargetBaseDir}/${DIR}"
 
     done
 

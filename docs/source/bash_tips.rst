@@ -158,7 +158,7 @@ unlikely))::
         # remove the mirrored artist
         rm -rf "${DIR}"
         # now copy the folder structure for one artist and hard link the files
-        cp -al /home/Music.Sync/SD1/"${DIR}" .
+        cp -al /home/Music/"${DIR}" .
     done
 
 This only works properly, if you have your mirror folder and original library

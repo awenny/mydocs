@@ -35,3 +35,8 @@ I did it. The **how** is usually documented anyway. :)
    :caption: Linux
 
    source/bash_tips
+
+.. toctree::
+   :caption: macOS
+
+   source/macOS

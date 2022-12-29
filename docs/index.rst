@@ -20,6 +20,7 @@ I did it. The **how** is usually documented anyway. :)
    source/sacd
    source/time_lapse
    source/optimizing_video
+   source/other_video
 
 .. toctree::
    :caption: Internet
